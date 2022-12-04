@@ -1,0 +1,121 @@
+.header {
+  background-color: $color_second;
+  min-height: 70px;
+}
+
+.header__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  @media screen and (min-width: 600px) {
+    gap: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  @media screen and (min-width: 1000px) {
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: $color_fifth;
+  @media screen and (min-width: 600px) {
+    font-size: 20px;
+    gap: 15px;
+  }
+  @media screen and (min-width: 1000px) {
+    gap: 20px;
+  }
+}
+
+.menu__item {
+  transition: scale 300ms $cubic;
+  &:hover,
+  &:focus {
+    scale: 1.1;
+    color: $color_accent;
+  }
+}
+
+.header__block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  @media screen and (min-width: 600px) {
+    gap: 30px;
+  }
+}
+
+.form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 150px;
+  height: 30px;
+  padding: 2px 4px;
+  background: $color_sixth;
+  border: transparent;
+  border-radius: 5px;
+  @media screen and (min-width: 600px) {
+    width: 198px;
+  }
+}
+
+.form__input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: $color_fifth;
+  width: 120px;
+  @media screen and (min-width: 600px) {
+    width: 152px;
+  }
+}
+
+.form__button {
+  width: 22px;
+  height: 28px;
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.form__button__icon {
+  fill: $color_fifth;
+  & use {
+    width: 22px;
+    height: 26px;
+  }
+}
+
+.lang {
+  color: $color_fifth;
+  width: 130px;
+  padding: 5px 8px;
+  background: rgba(0, 0, 0, 0.5);
+  border: transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 300ms $cubic;
+
+  &:hover,
+  &:focus {
+    color: $color_accent;
+  }
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSGO</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+      integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Quantico:regular&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"
+      defer
+    ></script>
+    <script src="./js/slider.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <nav class="menu">
+          <a href="" class="menu__item active">BLOG</a>
+          <a href="" class="menu__item">UPDATES</a>
+          <a href="" class="menu__item">RESOURCES</a>
+          <a href="" class="menu__item">COMMUNITY</a>
+        </nav>
+        <div class="header__block">
+          <div class="search">
+            <form action="" method="GET" class="search__form form">
+              <input
+                class="form__input"
+                type="text"
+                placeholder=""
+                name="name"
+                required-placeholder=""
+              />
+              <button class="form__button" type="submit">
+                <img
+                  src="./img/search_glass.svg"
+                  alt="search glass"
+                  width="22"
+                  height="26"
+                />
+              </button>
+            </form>
+          </div>
+          <select class="lang" name="select">
+            <option value="value1">English</option>
+            <option value="value2">Ukrainian</option>
+          </select>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="hero">
+        <p class="hero__amount">20,943,843</p>
+        <h1 class="hero__title">UNIQUE PLAYERS LAST MONTH</h1>
+        <picture class="hero__bg bg__img">
+          <source srcset="./img/bg.jpeg 1x, ./img/bg@2x.jpeg 2x" />
+          <img src="./img/bg.jpeg" alt="CSGO" />
+        </picture>
+      </section>
+      <section class="section updates">
+        <div class="container">
+          <div class="updates__container">
+            <h2 class="updates__title">MAJOR UPDATES</h2>
+            <div class="swiper slider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <picture class="slider__img">
+                    <source
+                      srcset="./img/slider1.jpg, ./img/slider1@2x.jpeg 2x"
+                    />
+                    <img src="./img/slider1.jpg" alt="slider1" />
+                  </picture>
+                </div>
+                <div class="swiper-slide">
+                  <picture class="slider__img">
+                    <source
+                      srcset="./img/slider2.jpg, ./img/slider2@2x.jpeg 2x"
+                    />
+                    <img src="./img/slider2.jpg" alt="slider1" />
+                  </picture>
+                </div>
+                <div class="swiper-slide">
+                  <picture class="slider__img">
+                    <source
+                      srcset="./img/slider3.jpg, ./img/slider3@2x.jpeg 2x"
+                    />
+                    <img src="./img/slider3.jpg" alt="slider1" />
+                  </picture>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+              <button class="swiper-next"></button>
+              <button class="swiper-prev"></button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
