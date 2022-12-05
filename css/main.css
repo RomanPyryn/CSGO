@@ -122,14 +122,12 @@ body {
       -ms-flex-align: center;
           align-items: center;
   gap: 10px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 10px;
 }
 @media screen and (min-width: 600px) {
   .header__container {
     gap: 15px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding: 15px;
   }
 }
 @media screen and (min-width: 1000px) {
@@ -137,8 +135,7 @@ body {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 20px;
   }
 }
 
